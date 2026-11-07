@@ -16,9 +16,24 @@ Estudantes de graduação, começando pelos de Engenharia do CEFET-MG, e as coor
 
 ## Como funciona
 
-O aluno entra, importa o histórico do SIGAA em PDF e passa a ter a sua grade, o horário, as disciplinas do curso com os materiais e as avaliações de outros alunos (dificuldade e esforço de cada disciplina). Os cursos e as matrizes curriculares são cadastrados pela equipe; para levar o produto a outra universidade, converti o PPC em matriz com o pipeline do [`ppc-gradment-ia`](https://github.com/catarina051/ppc-gradment-ia).
+O aluno entra, importa o histórico do SIGAA em PDF e vê a grade curricular do curso: o que já concluiu, o que está disponível e o que está bloqueado por pré-requisito. Para planejar o próximo período, monta alternativas (A e B). Para cada uma, o GradMent mostra a formatura estimada, avisos de pré e correquisitos e a dificuldade e o esforço que os veteranos deram a cada disciplina, e depois compara as duas alternativas. Também há horário, materiais e avaliações de disciplinas. O GradMent não bloqueia escolhas: a matrícula oficial segue as regras da instituição no SIGAA.
+
+Os cursos e as matrizes curriculares são cadastrados pela equipe; para levar o produto a outra universidade, converti o PPC em matriz com o pipeline do [`ppc-gradment-ia`](https://github.com/catarina051/ppc-gradment-ia).
 
 Front-end em Next.js, React, TypeScript e Tailwind; back-end em CodeIgniter 4 com API REST.
+
+## O produto
+
+Capturas de uma conta de demonstração, feitas para o vídeo do pitch.
+
+| | |
+| --- | --- |
+| ![Dashboard com o progresso do curso e o aviso de disciplinas a avaliar](docs/img/01-dashboard.png) | ![Revisão do histórico do SIGAA antes da importação](docs/img/02-importar-historico.png) |
+| **Dashboard:** progresso no curso e disciplinas a avaliar. | **Importação:** o aluno confere o histórico do SIGAA antes de importar. |
+| ![Grade curricular com disciplinas concluídas, disponíveis e bloqueadas](docs/img/03-grade-curricular.png) | ![Planejamento do próximo período com formatura estimada e avisos](docs/img/04-planejar-periodo.png) |
+| **Grade curricular:** concluídas, disponíveis e bloqueadas por pré-requisito. | **Planejar o período:** formatura estimada, avisos de correquisito e dificuldade pelos veteranos. |
+| ![Comparação entre duas alternativas de matrícula](docs/img/05-comparar-alternativas.png) | ![Avaliações de disciplinas pendentes e realizadas](docs/img/06-avaliacoes.png) |
+| **Comparar alternativas:** A e B lado a lado, com gargalos e carga semanal. | **Avaliações:** o aluno avalia disciplinas que concluiu. |
 
 ## Em números
 
